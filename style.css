@@ -74,7 +74,7 @@ section
     background-color: #63577A;
 }
 
-.forestimage
+#forestimage
 {
     display: flex;
     justify-content: center;
@@ -85,7 +85,10 @@ section
 .meimage
 {
     display: flex;
-    width: 100%
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 500px;
 }
 
 .about
@@ -100,6 +103,9 @@ section
 .edmontonimage
 {
     overflow: hidden;
+    align-content: center;
+    width: 100%;
+    max-width: 100%;
 }
 
 
@@ -185,7 +191,7 @@ h2, p
             }
             #meimage{
                 grid-column-start: 1;
-                grid-column-end: 5;
+                grid-column-end: span 4;
                 grid-row-start: 3;
                 grid-row-end: 5;      
             }
