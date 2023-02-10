@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Kanit&family=Space+Mono&family=VT323&display=swap');
+
+body
+{
+margin: 0px;
+grid-template-rows: 25vh auto;
+background-color: #63577A;
+}
+
+a:link { color: white }
+a:visited { color: white }
+a:hover { color: #CBB2FB}
+a:active { color: #CBB2FB }
+
+#grid
+{
+    display: grid;
+    background-color: transparent !important;
+    padding: 0px 0px !important;
+    grid-template-columns: auto;
+}
+
+.container
+{
+    background-color: #63577A;
+}
+
+header
+{
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #9A66FA !important;
+font-family: 'Kanit';
+font-size: x-large;
+}
+
+nav
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7A52C7 !important;
+    color: white;
+    font-family: 'Kanit';
+    font-size: x-large;
+    min-width: 160px;
+}
+
+aside
+{
+    width: 100%;
+    justify-content: right;
+    align-items: right;
+    overflow: hidden;
+}
+
+section
+{
+    display: inline-block;
+    font-family: 'Kanit';
+    width: 100%;
+    color: white;
+}
+
+.resume
+{
+    background-color: #63577A;
+}
+
+.contact
+{
+    text-align: left;
+    background-color: #63577A;
+}
+
+.forestimage
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%
+}
+
+.meimage
+{
+    display: flex;
+    width: 100%
+}
+
+.about
+{
+    display: flex;
+    max-width: 800px;
+    font-size: x-large;
+    width:100%;
+    background-color: #63577A
+}
+
+.edmontonimage
+{
+    overflow: hidden;
+}
+
+
+td
+{min-width: 50%}
+
+h1,h5
+{
+text-align: center;
+color: white;
+}
+
+h2, p
+{color: White;}
+
+
+@media screen and ( min-width : 800px )
+    {
+    body { background-color: #63577A;}
+        #grid{
+            display: grid;
+            grid-template-columns: repeat(8, auto);
+            grid-template-rows: repeat(8, auto);
+            }           
+            #header {
+                grid-column-start: 1;
+                grid-column-end: span 8;
+                grid-row-start: 1;
+                grid-row-end: 1;
+            }
+            
+            #home {
+                grid-column-start: 1;
+                grid-column-end: span 2;
+                grid-row-start: 2;
+                grid-row-end: 2;
+            }
+            
+            #abouttab {
+                grid-column-start: 3;
+                grid-column-end: span 2;
+                grid-row-start: 2;
+                grid-row-end: 2;
+            }
+            
+            #resumetab {
+                grid-column-start: 5;
+                grid-column-end: span 2;
+                grid-row-start: 2;
+                grid-row-end: 2;
+            }
+            
+            #contacttab {
+                grid-column-start: 7;
+                grid-column-end: span 2;
+                grid-row-start: 2;
+                grid-row-end: 2;
+            }
+            
+            #edmontonimage {
+                grid-column-start: 1;
+                grid-column-end:span 8;
+                grid-row-start: 3;
+                grid-row-end: 4;
+            }
+            #resume {
+                grid-column-start: 2;
+                grid-column-end: span 6;
+                grid-row-start: 3;
+                grid-row-end: span 6;
+            }
+            #contact {
+                grid-column-start: 1;
+                grid-column-end: span 8;
+                grid-row-start: 3;
+                grid-row-end: span 2;
+            }
+            #forestimage{
+                grid-column-start: 3;
+                grid-column-end:span 6;
+                grid-row-start: 5;
+                grid-row-end: 8;      
+            }
+            #meimage{
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 3;
+                grid-row-end: 5;      
+            }
+            #about{
+                grid-column-start: 7;
+                grid-column-end: 7;
+                grid-row-start: 4;
+                grid-row-end: 6;  
+            }
+            #abouthome{
+                grid-column-start: 2;
+                grid-column-end: span 6;
+                grid-row-start: 5;
+                grid-row-end: 8;
+            }
+    }
+    
+
+   
